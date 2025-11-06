@@ -1,3 +1,12 @@
 /animal_plant_samples
 bioclip2_model_int8.onnx
 bioclip2_model.onnx
+logit_scale.pkl
+
+.venv
+__pycache__/
+.vscode/settings.json
+.DS_Store
+.ruff_cache
+.ipynb_checkpoints
+test/output/

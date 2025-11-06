@@ -1,0 +1,13 @@
+FINAL ACCURACY RESULTS:
+Total Images Processed: 10008
+✓ Final Accuracy: 88.42% (8849/10008)
+Category 'Plantae': 897 correct images with total of 1000 images
+Category 'Aves': 934 correct images with total of 1000 images
+Category 'Amphibia': 866 correct images with total of 1000 images
+Category 'Insecta': 909 correct images with total of 1000 images
+Category 'Animalia': 872 correct images with total of 1000 images
+Category 'Mollusca': 852 correct images with total of 1000 images
+Category 'Fungi': 889 correct images with total of 999 images
+Category 'Arachnida': 892 correct images with total of 1009 images
+Category 'Reptilia': 863 correct images with total of 1000 images
+Category 'Mammalia': 875 correct images with total of 1000 images
