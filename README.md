@@ -1,5 +1,7 @@
 # BioClip2 Quantized Model
 
+[[`Model on Hugging Face`](https://huggingface.co/mahan-ym/bioclip-2-quantized)]
+
 A mobile-compatible, quantized version of [BioCLIP 2](https://huggingface.co/imageomics/bioclip-2) for efficient species classification on resource-constrained devices.
 
 ## Overview
