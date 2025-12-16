@@ -55,7 +55,7 @@ with open(
 
 
 def infer(image):
-    k = 1
+    k = 3
     quantized_int8_path = "/Users/mahan_yt/Documents/work/Dutch-Rose-Media/Projects/AI_test/demo/src/bioclip2_model_int8.onnx"
 
     # Preprocess image
@@ -82,16 +82,17 @@ def infer(image):
 
     topk = probs.topk(k)
     prediction_dict = {
-        format_name(*txt_names[i]): prob for i, prob in zip(topk.indices, topk.values)
+        format_name(*txt_names[i]): round(prob.item(), 2)
+        for i, prob in zip(topk.indices, topk.values)
     }
-    return str(*prediction_dict.keys())
+    return str(json.dumps(prediction_dict, indent=4))
 
 
 demo = gr.Interface(
     title=title,
     fn=infer,
     inputs=gr.Image(label="Input Image", type="pil"),
-    outputs=gr.Textbox(label="Predicted Species"),
+    outputs=gr.Textbox(label="Predicted Species", lines=10),
     theme=gr.themes.Default(
         primary_hue="blue",
         secondary_hue="green",
